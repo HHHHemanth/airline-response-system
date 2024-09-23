@@ -64,6 +64,28 @@ You can install the required libraries using:
 ```bash 
 pip install Flask TextBlob pandas
 ```
+## 🤖 Telegram Bot Setup
+1. Open Telegram and search for the BotFather.
+
+2. Start a chat with BotFather by clicking the Start button.
+
+3. Use the /newbot command to create a new bot.
+
+4. Follow the instructions to:
+
+- Provide a name for your bot (e.g., "Airline Support Bot").
+- Choose a unique username for your bot that ends with "_bot" (e.g., "airline_support_bot").
+5. Once created, BotFather will give you a Telegram API Token. Save this token, as you'll need it to connect your bot to the system.
+
+6. In your project directory, create a .env file and add the following line:
+
+``` bash
+TELEGRAM_BOT_TOKEN=YOUR_API_TOKEN 
+```
+
+Replace YOUR_API_TOKEN with the token provided by BotFather.
+
+7. Add your bot to any Telegram group or chat where it will provide automated airline query responses.
 ## 🎯 Usage
 1. Run the System: Start the Flask application and interact with the system through the Telegram bot or directly through the web interface.
 2. Sentiment Analysis: The system will process customer feedback from feedback.csv and display the analysis in a graphical format.
